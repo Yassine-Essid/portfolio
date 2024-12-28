@@ -1,0 +1,59 @@
+<footer class="py-10 ">
+    <div class="w-full container mx-auto px-6">
+        <!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-8"> -->
+        <div class="w-full flex justify-center flex-wrap md:flex-row ">
+            <!-- contact me section -->
+            <div class="space-y-4 justify-center text-center ">
+                <h3 class="text-xl font-semibold text-blue-400 mb-4">Contact Me</h3>
+                <ul class="list-none space-y-3 ">
+                    <li class="flex items-center space-x-3 hover:text-blue-400 transition-colors duration-300">
+                        <i class="text-blue-500"></i>
+                    </li>
+                    <li class="flex items-center space-x-3 hover:text-blue-400 transition-colors duration-300">
+                        <fa-icon [icon]="phone"></fa-icon>
+                        <span>+216 54 806 948</span>
+                    </li>
+                    <li class="flex items-center space-x-3 hover:text-blue-400 transition-colors duration-300">
+                        <fa-icon [icon]="adress"></fa-icon>
+                        <span>Megrine, Ben Arous</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Social Media Section -->
+            <div class="space-y-4 justify-center ">
+                <h3 class="text-xl font-semibold mb-4">Social Media</h3>
+                <div class="flex flex-wrap text-center  space-x-4 justify-center">
+                    <a class=" hover:text-blue-500 transition-colors duration-300">
+                        <fa-icon [icon]="linkedin" 
+                                (click)="openLink(linkedinLink)"
+                                class="text-xl hover:text-blue-500 transition-colors duration-300">
+                        </fa-icon>
+                        
+                    </a>
+                    <a class=" hover:text-blue-500 transition-colors duration-300">
+                        <fa-icon [icon]="github" 
+                                 (click)="openLink(githubLink)"
+                                 class="text-xl hover:text-gray-400 transition-colors duration-300">
+                         </fa-icon>
+                    </a>
+                </div>
+            </div>
+            <!-- mailing section  -->
+            <div class="justify-center text-center ">
+                <h3 class="text-xl font-semibold text-blue-400 mb-4">Send Me a Message</h3>
+                <button (click)="sendMail()" 
+                        class="px-4 py-2 rounded hover:bg-blue2 transition-colors duration-300"
+                        >
+                        Send via Gmail
+                    </button>
+
+            </div>
+            
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
+            <p>&copy; 2024 Yassine-Essid. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
